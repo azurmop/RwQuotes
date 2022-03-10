@@ -15,8 +15,8 @@ jobs:
 
       - name: Unit tests
         run: |
-        chmod +x gradlew
-        ./gradlew test
+         chmod +x gradlew
+         ./gradlew test
   ## 4
   android_tests:
     runs-on: [ macos-latest ]
@@ -28,5 +28,5 @@ jobs:
         with:
           api-level: 29
           script: |
-          chmod +x gradlew
-          ./gradlew connectedAndroidTest
+           chmod +x gradlew
+           ./gradlew connectedAndroidTest
