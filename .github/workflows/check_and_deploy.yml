@@ -15,7 +15,7 @@ jobs:
 
       - name: Unit tests
         run: |
-        chmox +x gradlew
+        chmod +x gradlew
         ./gradlew test
   ## 4
   android_tests:
@@ -28,5 +28,5 @@ jobs:
         with:
           api-level: 29
           script: |
-          chmox +x gradlew
+          chmod +x gradlew
           ./gradlew connectedAndroidTest
