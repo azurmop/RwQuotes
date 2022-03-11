@@ -67,6 +67,8 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
+        supportActionBar?.title = "From feature branch (fix)"
+
         quotesViewModel = ViewModelProvider(
             this,
             QuoteViewModelFactory(QuotesRepositoryImpl(application = application))
