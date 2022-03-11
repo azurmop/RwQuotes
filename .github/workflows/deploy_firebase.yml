@@ -41,11 +41,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 2
-      - uses: actions/download-artifact@master
-        name: "Download APK (and print contents)"
+      - name: "Download APK"
+        uses: actions/download-artifact@master
         with:
           name: release.apk
-          script: ls -la
+      - name: "List contents"
+        run: ls -la
       #3
       - name: Upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
