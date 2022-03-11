@@ -44,7 +44,7 @@ jobs:
       - name: "Download APK"
         uses: actions/download-artifact@master
         with:
-          name: release.apk
+          name: app-release-unsigned-signed.apk
       - name: "List contents"
         run: ls -la
       #3
