@@ -6,6 +6,9 @@ on:
   push:
     tags:
       - 'v*'
+  pull_request:
+    branches:
+      - master
 
 ## 2
 jobs:
