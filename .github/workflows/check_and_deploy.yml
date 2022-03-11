@@ -14,7 +14,7 @@ on:
 jobs:
   ## 3
   unit_tests:
-    if: ${{ false }}
+#    if: ${{ false }}
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
           ./gradlew test
   ## 4
   android_tests:
-    if: ${{ false }}
+#    if: ${{ false }}
     runs-on: [ macos-latest ]
     steps:
       - uses: actions/checkout@v2
