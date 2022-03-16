@@ -12,6 +12,6 @@ jobs:
       - name: Slack Notification
         uses: adamkdean/simple-slack-notify@master
         env:
-          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
         with:
           text: "Hello simple notification"
