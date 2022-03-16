@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slack Notification
-        uses: Ilshidur/action-slack@2.0.2
         env:
           SLACK_WEBHOOK: https://hooks.slack.com/services/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
+        uses: Ilshidur/action-slack@2.0.2
         with:
           args: 'A new commit has been pushed.' # Optional
