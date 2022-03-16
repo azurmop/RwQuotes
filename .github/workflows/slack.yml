@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Slack Notification
         env:
-          SLACK_WEBHOOK: https://hooks.slack.com/services/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
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         uses: Ilshidur/action-slack@2.0.2
         with:
           args: 'A new commit has been pushed.' # Optional
