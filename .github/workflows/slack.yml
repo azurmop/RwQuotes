@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: Ilshidur/action-slack@2.0.2
         env:
-          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
-          SLACK_MESSAGE: 'ROCKETMAN :rocket:'
-          SLACK_TITLE: ALL GOOD
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
